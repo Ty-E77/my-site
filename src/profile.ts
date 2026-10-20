@@ -31,7 +31,8 @@ export const profile = {
   funFacts: [
     "I love to game and my favorite game right now is Valorant!",
     "I love chick-fil-a!!!",
-    "I love to run!!"
+    "I love to run!!",
+    "My favoirte TV show of all time is Game of Thrones!"
   ],
 
   /** One decision you're proud of, in a sentence. */
