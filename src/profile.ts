@@ -29,8 +29,9 @@ export const profile = {
    * how classmates find something to say hello about.
    */
   funFacts: [
-    "I love to game and my favorite game right now is Valorant.",
+    "I love to game and my favorite game right now is Valorant!",
     "I love chick-fil-a!!!",
+    "I love to run!!"
   ],
 
   /** One decision you're proud of, in a sentence. */
