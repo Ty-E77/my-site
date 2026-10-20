@@ -10,7 +10,7 @@ export const metadata = { title: `About — ${profile.displayName}` };
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-14">
-      <div className="flex flex-col gap-10 sm:flex-row">
+      <div className="flex flex-col gap-10 rounded-3xl bg-linear-to-br from-accent/20 via-accent/5 to-transparent p-8 sm:flex-row">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={profile.photoPath}

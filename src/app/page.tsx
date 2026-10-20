@@ -39,11 +39,13 @@ export default function HomePage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-14">
       {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-        {profile.tagline}
-      </p>
-      <h1 className="mt-3 text-5xl font-bold">{profile.displayName}</h1>
-      <p className="mt-5 max-w-prose text-lg text-muted">{profile.bio}</p>
+      <section className="flex min-h-[60vh] flex-col justify-center py-10">
+        <h1 className="text-6xl font-bold sm:text-7xl">{profile.displayName}</h1>
+        <p className="mt-6 max-w-2xl font-heading text-3xl font-semibold italic leading-tight text-accent sm:text-4xl">
+          {profile.tagline}
+        </p>
+        <p className="mt-8 max-w-prose text-lg text-muted">{profile.bio}</p>
+      </section>
 
       {/* ── Portfolio of decision services ───────────────────────────── */}
       <section className="mt-14">
@@ -54,7 +56,10 @@ export default function HomePage() {
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {SERVICES.map((s) => (
-            <li key={s.lane} className="rounded-xl border border-line bg-surface p-5">
+            <li
+              key={s.lane}
+              className="rounded-xl border border-line bg-surface p-5 shadow-md shadow-black/20 transition duration-200 hover:-translate-y-1 hover:border-accent/50 hover:shadow-xl hover:shadow-black/40"
+            >
               <p className="text-xs font-semibold uppercase tracking-widest text-muted">
                 Lane {s.lane}
               </p>
